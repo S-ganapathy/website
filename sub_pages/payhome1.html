@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initial Payment</title>
+    <link rel="icon" type="image/x-icon" href="sub_images/clipart2152998.png">
+    <link rel="stylesheet" href="sub_css/payhome1.css">
+</head>
+<body>
+    <div class="container">
+        <form action="payhome2.html" onsubmit="show()">
+
+
+            <div class="box">
+                <div class="head">
+                   <a href="bookappointment.html"><h4><< Back</h4></a> 
+                     <h3>Confirm</h3>           
+                    </div>
+                    <br><p> <span style="color: lightgreen; font-size: 25px;"> Thank you</span><br><br>
+                     confirm your appointment by choseing the payment of the initial charge.thank you 
+                    </p>
+            </div>
+            <div class="box1">
+                <span>Name :</span><br>
+                <span id="name"> </span>
+            </div>
+            <div class="box1">
+                <span>Phone :</span><br>
+                <span id="phone"></span>
+            </div>
+            <div class="box1">
+                <span>Email :</span><br>
+                <span id="email"></span>
+            </div>
+            <div class="box1">
+                <span>Date :</span><br>
+                <span id="date"></span>
+            </div>
+            <div class="box2"><br>
+                <span>Amount : </span><span id="amount">200  </span><span>  Rupees</span>
+            </div>
+            <div class="box3">
+              
+                <input type="submit" value="pay to proceed">
+          
+            </div>
+
+        </form>
+    </div>
+    <!--function valandadd(){
+        const nam = document.getElementById("name").value;
+          const num = document.getElementById("num").value;
+          const ema = document.getElementById("emailid").value;
+          const date = document.getElementById("date").value;
+        
+        
+        localStorage.setItem("name",nam);
+        localStorage.setItem("ph",num);
+        localStorage.setItem("em",ema);
+        localStorage.setItem("day",date);
+        window.location.href="payhome1.html";
+        }
+
+    -->
+    <script>
+       const fname=localStorage.getItem("name");
+       const fnum=localStorage.getItem("phnum");
+       const fem=localStorage.getItem("email");
+          
+       const fday=new Date().toDateString();
+      
+       document.getElementById("name").innerHTML=fname;
+       document.getElementById("phone").innerHTML=fnum;
+       document.getElementById("email").innerHTML=fem;
+       document.getElementById("date").innerHTML=fday;
+     function show(){
+        var amt=document.getElementById("amount").innerHTML;
+
+        localStorage.setItem("phone",fnum);
+        localStorage.setItem("amount",amt);
+        
+        window.location.href="summary.html";
+     }
+    </script>
+   
+   
+
+      
+</body>
+</html>
