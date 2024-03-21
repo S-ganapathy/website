@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card</title>
+    <link rel="icon" type="image/x-icon" href="sub_images/clipart2152998.png">
+    <link rel="stylesheet" href="sub_css/debit.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="otp.html" onsubmit="show()">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Your name ">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="name@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="Address....">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Chennai">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="India">
+                    </div>
+                    <div class="inputBox">
+                        <span>pin code :</span>
+                        <input type="text" placeholder="600 124">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Credit card payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <span>Credit card number :</span>
+                    <input type="number" placeholder="0000-0000-0000-0000">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="number" placeholder="01">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2023">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="000">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to Pay" class="submit-btn">
+
+    </form>
+
+</div>    
+<script>
+    function show(){
+    var nam=document.getElementById("name").value;
+    var em=document.getElementById("email").value;
+            
+    localStorage.setItem("name",nam);
+    localStorage.setItem("email",em);
+    window.location.href="summary.html";
+}
+
+</script>
+</body>
+</html>

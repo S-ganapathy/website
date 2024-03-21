@@ -1,0 +1,54 @@
+
+body::-webkit-scrollbar{
+    display: none;
+    
+}
+
+.grid{
+    border: 1px;
+    padding: 20px;
+    box-shadow: 5px 10px 25px lightgray;
+    border-radius: 30px;
+    background-color: lightskyblue ;
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    margin-left: 24%;
+    margin-top: 12%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=file]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.button{
+    background-color: #0047AB;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #1434A4	;
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
