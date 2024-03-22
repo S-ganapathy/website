@@ -118,7 +118,7 @@ body::-webkit-scrollbar{
 .img img{
     height: 100px;
     width: 100px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .search_btn .box{
@@ -847,6 +847,9 @@ marquee{
 
     .headerMain{
         height: 100px;
+    }
+    .search_btn .box,.search_btn .btn{
+        display: none;
     }
 
      .intro{
