@@ -837,3 +837,43 @@ marquee{
     }
     
 }
+
+
+/* orientation landscape */
+
+@media only screen and (orientation:landscape) {
+
+    
+
+    .headerMain{
+        height: 100px;
+    }
+
+     .intro{
+        height: 600px;
+    }
+    .gallery{
+        height: 700px;
+    }
+
+    .service{
+        height: 700px;
+    }
+
+    .about{
+        height: 700px;
+    } 
+
+    .contact_footer{
+        height: 700px;
+    }
+
+    #menubtn{
+        display: none;
+        font-size: small;
+        padding: 1%;
+    }
+    .menu_tabs a{
+        display: none;
+    }
+}
