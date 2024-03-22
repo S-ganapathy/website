@@ -241,10 +241,20 @@
         let myscreen_ori=window.screen.orientation;
         myscreen_ori.lock("portrait");
 
+        let portrait=true;
+
+        window.matchMedia("(orientation:portrait)").addEventListener("change",e => {
+             portrait=e.matches;
+            console.log(portrait)
+        
+        });
+
         function scrollFunction(){
             if(document.documentElement.scrollTop > 140){  //document.body.scrollTop > 140 || 
                 topbutton.style.display="block";
-                menubutton.style.display="block";      
+                if(portrait){
+                menubutton.style.display="block";  
+              }      
             }
             else{
                 topbutton.style.display="none";
