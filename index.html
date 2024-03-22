@@ -237,6 +237,10 @@
             scrollFunction()
         };
 
+
+        let myscreen_ori=window.screen.orientation;
+        myscreen_ori.lock("portrait");
+
         function scrollFunction(){
             if(document.documentElement.scrollTop > 140){  //document.body.scrollTop > 140 || 
                 topbutton.style.display="block";
