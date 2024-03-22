@@ -871,12 +871,5 @@ marquee{
         height: 700px;
     }
 
-    #menubtn{
-        display: none;
-        font-size: small;
-        padding: 1%;
-    }
-    .menu_tabs a{
-        display: none;
-    }
+   
 }
